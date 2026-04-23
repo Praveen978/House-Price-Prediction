@@ -23,6 +23,3 @@ http://127.0.0.1:5000
 - models/best_model.joblib → saved model  
 - src/model_training.py → training code  
 - data/house_prices.csv → dataset
-
-Made by LekhaSri  
-February 2026
