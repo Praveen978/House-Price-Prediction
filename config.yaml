@@ -1,0 +1,47 @@
+# config.yaml - Configuration for House Price Prediction Project
+
+# Model settings
+model:
+  path: models/best_model.joblib
+  type: xgboost
+
+# Data paths
+data:
+  raw_path: data/house_prices.csv
+  processed_path: data/processed_house_prices.csv   # optional future file
+
+# App settings
+app:
+  host: 127.0.0.1
+  port: 5000
+  debug: true
+  secret_key: "super-secret-key-123"  # change this in real app
+
+# Preprocessing settings
+preprocessing:
+  numeric_features:
+    - Area
+    - Bedrooms
+    - Bathrooms
+    - Age
+  categorical_features:
+    - Location
+    - Property_Type
+  scaler: standard
+  encoder: onehot
+
+# Training settings
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+
+# Prediction defaults
+prediction:
+  default_values:
+    area: 1500
+    bedrooms: 3
+    bathrooms: 2
+    age: 5
+    location: "City Center"
+    property_type: "Apartment"

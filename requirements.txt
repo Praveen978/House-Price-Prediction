@@ -1,0 +1,8 @@
+# requirements.txt - Dependencies for House Price Prediction Project
+
+flask==3.0.3              # Web framework for the app
+pandas==2.2.2             # Data handling and DataFrame
+numpy==1.26.4             # Numerical operations
+scikit-learn==1.5.1       # Preprocessing, pipelines, models
+xgboost==2.1.1            # Best performing model
+joblib==1.4.2             # Model saving/loading
